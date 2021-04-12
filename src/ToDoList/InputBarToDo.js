@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 let id = 0;
 
-const InputBar = ({ messages, setMessages }) => {
+const InputBarToDo = ({ list, setList }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (e) => setValue(e.target.value);
 
   const handleClick = () => {
-    setMessages([...messages, { id: id, content: value }]);
+    setList([...list, { id: id, content: value }]);
     setValue("");
     id += 1;
   };
@@ -21,4 +21,4 @@ const InputBar = ({ messages, setMessages }) => {
   );
 };
 
-export default InputBar;
+export default InputBarToDo;
