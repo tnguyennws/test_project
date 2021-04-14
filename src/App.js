@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 //import InputBar from "./InputBar";
-//import InputBarToDo from "./InputBar";
-import ToDoList from "./ToDoList/ToDoList";
+//import ToDoList from "./ToDoList/ToDoList";
 //import DisplayStopwatch from './Stopwatch/DisplayStopwatch';
 //import ButtonStopwatch from './Stopwatch/ButtonStopwatch';
+import Metronome from './Metronome/Metronome';
 
 const App = () => {
   //-------------- Exo cours -------------
@@ -18,12 +18,19 @@ const App = () => {
   );*/
 
   //---------------- To Do List -------------------
-  return (
+  /*return (
     <div>
-      <h1>To Do List</h1>
       <ToDoList />
     </div>
+  );*/
+
+  //----------------- Metronome --------------------
+  return (
+    <div>
+      <Metronome />
+    </div>
   );
+
 
   //---------------- Stopwatch -----------------
   /*const [time, setTime] = useState({ms:0, s:0, m:0, h:0});

@@ -17,12 +17,12 @@ class TodoList extends React.Component{
     removeItem = (props)=> {
       this.state.todoList.splice(props, 1)
       this.setState({todoList: this.state.todoList})
-  };
+    };
 
-  strikeItem = (props)=> {
-    this.state.todoList.splice(props, 1)
-    this.setState({todoList: this.state.todoList})
-};
+    strikeItem = (props)=> {
+        this.state.todoList.splice(props, 1)
+        this.setState({todoList: this.state.todoList})
+    };
 
     onSubmit=(e)=>{
         e.preventDefault();
@@ -41,6 +41,7 @@ class TodoList extends React.Component{
         ))
         return (
             <div>
+                <h1>To Do List</h1>
                 <form onSubmit={this.onSubmit}>
                     <input 
                         value={this.state.todo}

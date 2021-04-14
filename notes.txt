@@ -1,0 +1,3 @@
+Pour le style, privilégier une balise const style dans le code au lieu d'un fichier style.css.
+
+Utilisation de matérial.ui
