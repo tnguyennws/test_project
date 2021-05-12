@@ -2,8 +2,8 @@ import React from "react";
 //import { useState } from "react";
 //import InputBar from "./InputBar";
 //import ToDoList from "./ToDoList/ToDoList";
-//import DisplayStopwatch from './Stopwatch/DisplayStopwatch';
-//import ButtonStopwatch from './Stopwatch/ButtonStopwatch';
+//import AffichageChrono from './Stopwatch/AffichageChrono';
+//import BoutonChrono from './Stopwatch/BoutonChrono';
 import Metronome from './Metronome/Metronome';
 
 const App = () => {
@@ -80,8 +80,8 @@ const App = () => {
     <div>
      <div >
           <div >
-               <DisplayStopwatch time={time}/>
-               <ButtonStopwatch status={status} resume={resume} reset={reset} stop={stop} start={start}/>
+               <AffichageChrono time={time}/>
+               <BoutonChrono status={status} resume={resume} reset={reset} stop={stop} start={start}/>
           </div>
      </div>
     </div>

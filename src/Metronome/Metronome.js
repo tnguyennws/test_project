@@ -10,8 +10,7 @@ class Metronome extends React.Component {
             playing: false,
             count: 0,
         }
-        this.click1 = new Audio("https://daveceddia.com/freebies/react-metronome/click1.wav");
-        this.click2 = new Audio("https://daveceddia.com/freebies/react-metronome/click1.wav");
+        this.click = new Audio("https://www.soundjay.com/button/sounds/beep-07.mp3");
         this.handleBPM = this.handleBPM.bind(this);
         this.updateInterval = this.updateInterval.bind(this);
         this.startStop = this.startStop.bind(this);
@@ -19,8 +18,8 @@ class Metronome extends React.Component {
     }
 
     updateInterval() {
-        const bmpSpeed = 60 * 1000 / this.state.bpm;
-        this.timer = setInterval(this.playClick, bmpSpeed);
+        const bpmSpeed = 60 * 1000 / this.state.bpm;
+        this.timer = setInterval(this.playClick, bpmSpeed);
     }
 
     handleBPM(event) {
@@ -41,7 +40,7 @@ class Metronome extends React.Component {
 
     playClick() {
         if (this.state.count === 0){
-            this.click2.play()
+            this.click1.play()
         }else{
             this.click1.play();
         } 
